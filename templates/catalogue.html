@@ -1,0 +1,105 @@
+{% extends "base.html" %}
+
+{% block title %}Kumudhini Silks - Catalogue{% endblock %}
+
+{% block content %}
+<section class="catalogue-hero">
+    <div class="container">
+        <h2>✨ Step Into Our Loom of Stories ✨</h2>
+        <p>Discover the artistry of Kumudhini Silks through our exclusive online and in-store catalogue - a visual journey through textures, patterns, and hues that celebrate India's rich weaving traditions.</p>
+    </div>
+</section>
+
+<section class="catalogue-preview">
+    <div class="container">
+        <div class="preview-content">
+            <div class="preview-text">
+                <h3>📖 Our Catalogue Experience</h3>
+                <p>Each piece featured in our catalogue has been carefully photographed to capture its intricate zari work, vibrant tones, and elegant drape.</p>
+                
+                <p>From traditional motifs that echo centuries of culture to contemporary reinterpretations of the classic silk, our designs speak to every generation.</p>
+                
+                <p>Whether you're looking for bridal splendor, festive radiance, or everyday elegance, our catalogue is your window into a world where silk isn't just worn - it's cherished.</p>
+                
+                <div class="cta-buttons">
+                    <a href="{{ url_for('download_catalogue') }}" class="btn">📥 Download Digital Catalogue</a>
+                    <a href="{{ url_for('contact') }}" class="btn btn-outline">🏪 Visit Our Showroom</a>
+                </div>
+            </div>
+            <div class="preview-image">
+                <!-- Placeholder for catalogue image -->
+                <div class="image-placeholder">Catalogue Preview</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="featured-products">
+    <div class="container">
+        <h2 class="section-title">⭐ Featured From Our Catalogue ⭐</h2>
+        <div class="product-grid">
+            <div class="product-card product-card--kancheepuram">
+                <div class="product-image product-image--kancheepuram">
+                    <span class="badge-ribbon">Bestseller</span>
+                </div>
+                <div class="product-info">
+                    <h3>Traditional Kancheepuram</h3>
+                    <p>Classic red with gold zari border — deep, royal hues for ceremonies.</p>
+                    <span class="price">From ₹12,000</span>
+                </div>
+            </div>
+
+            <div class="product-card product-card--banarasi">
+                <div class="product-image product-image--banarasi">
+                    <span class="badge-ribbon badge-ribbon--alt">Limited</span>
+                </div>
+                <div class="product-info">
+                    <h3>Bridal Banarasi</h3>
+                    <p>Gold brocade with floral motifs — opulent texture, heirloom quality.</p>
+                    <span class="price">From ₹18,000</span>
+                </div>
+            </div>
+
+            <div class="product-card product-card--designer">
+                <div class="product-image product-image--designer">
+                    <span class="badge-circle">New</span>
+                </div>
+                <div class="product-info">
+                    <h3>Designer Tissue</h3>
+                    <p>Pastel, lightweight, and modern — for elegant daytime occasions.</p>
+                    <span class="price">From ₹8,000</span>
+                </div>
+            </div>
+
+            <div class="product-card product-card--festival">
+                <div class="product-image product-image--festival">
+                    <span class="badge-ribbon">Popular</span>
+                </div>
+                <div class="product-info">
+                    <h3>Festival Collection</h3>
+                    <p>Vibrant greens and peacock motifs — festive favorites with cheerful tones.</p>
+                    <span class="price">From ₹10,000</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="catalogue-info">
+    <div class="container">
+        <div class="info-content">
+            <div class="info-box">
+                <h3>📥 Digital Catalogue</h3>
+                <p>Request a digital preview curated by our team. Get access to our latest collections and exclusive designs.</p>
+                <a href="{{ url_for('download_catalogue') }}" class="btn btn-small">Request Digital Copy</a>
+            </div>
+            
+            <div class="info-box">
+                <h3>🏪 In-Store Experience</h3>
+                <p>Visit our showroom to experience the true brilliance of our collection in person. Our stylists will help you find the perfect saree.</p>
+                <a href="{{ url_for('contact') }}" class="btn btn-small btn-outline">Plan Your Visit</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

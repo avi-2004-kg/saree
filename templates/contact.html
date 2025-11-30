@@ -1,0 +1,111 @@
+{% extends "base.html" %}
+
+{% block title %}Kumudhini Silks - Contact{% endblock %}
+
+{% block content %}
+<section class="contact-hero">
+    <div class="container">
+        <h2>✨ Visit Us. Feel the Weave. Live the Elegance. ✨</h2>
+    </div>
+</section>
+
+<section class="contact-content">
+    <div class="container">
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h3>📞 Get In Touch</h3>
+                <div class="contact-details">
+                    <div class="detail-item">
+                        <h4>📍 Address</h4>
+                        <p>#197/7, Maruthi Mansion,<br>Canara Bank Building,<br>Cunningham Road, Bengaluru - 560052</p>
+                    </div>
+                        <div class="detail-item">
+                            <h4>📱 Phone</h4>
+                            <p>
+                                <a href="tel:08022262354">080 2226 2354</a><br>
+                                <a href="tel:+919535286772">+91 95352 86772</a>
+                            </p>
+                        </div>
+                        <div class="detail-item">
+                            <h4>📧 Email</h4>
+                            <p><a href="mailto:kumudhinisilks7686@gmail.com">kumudhinisilks7686@gmail.com</a></p>
+                        </div>
+                    
+                    <div class="detail-item">
+                        <h4>🕐 Store Hours</h4>
+                        <p>10:00 AM - 8:00 PM (Mon-Sat)<br>11:00 AM - 7:00 PM (Sunday)</p>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <h4>📸 Follow Us</h4>
+                        <p>Instagram: @kumudhinisilks</p>
+                    </div>
+                </div>
+                
+                <div class="map-container">
+                    <div class="map-placeholder">
+                        <p>Map Location: Cunningham Road, Bengaluru</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <h3>✉️ Send Us a Message</h3>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn">✉️ Send Message</button>
+                </form>
+                <div id="formMessage" class="form-message"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="visit-showroom">
+    <div class="container">
+        <h2 class="section-title">✨ Visit Our Boutique ✨</h2>
+        <p>We invite you to visit our boutique and experience the touch of true silk - the warmth of tradition, the finesse of craftsmanship, and the trust of a name built through generations.</p>
+        
+        <div class="showroom-highlights">
+            <div class="highlight">
+                <h3>👗 Personal Styling</h3>
+                <p>Expert assistance to find your perfect saree</p>
+            </div>
+            
+            <div class="highlight">
+                <h3>🎨 Collection Preview</h3>
+                <p>View our entire collection in person</p>
+            </div>
+            
+            <div class="highlight">
+                <h3>✨ Custom Orders</h3>
+                <p>Special requests and bespoke designs</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

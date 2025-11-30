@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Kumudhini Silks{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>✨ Kumudhini Silks</h1>
+                <p>Woven Heritage • Timeless Elegance</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="{{ url_for('home') }}" {% if request.endpoint == 'home' %}class="active"{% endif %}>Home</a></li>
+                    <li><a href="{{ url_for('about') }}" {% if request.endpoint == 'about' %}class="active"{% endif %}>About</a></li>
+                    <li><a href="{{ url_for('products') }}" {% if request.endpoint == 'products' %}class="active"{% endif %}>Products</a></li>
+                    <li><a href="{{ url_for('catalogue') }}" {% if request.endpoint == 'catalogue' %}class="active"{% endif %}>Catalogue</a></li>
+                    <li><a href="{{ url_for('contact') }}" {% if request.endpoint == 'contact' %}class="active"{% endif %}>Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>✨ Kumudhini Silks</h3>
+                    <p><strong>Woven by Heritage. Carried by Heart.</strong></p>
+                    <p>Crafted for Moments. Cherished for Generations.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>📍 Contact Info</h4>
+                    <p>#197/7, Maruthi Mansion,<br>Canara Bank Building,<br>Cunningham Road, Bengaluru - 560052</p>
+                    <p>📱 <a href="tel:08022262354">080 2226 2354</a><br>📲 <a href="tel:+919535286772">+91 95352 86772</a><br>📧 <a href="mailto:kumudhinisilks7686@gmail.com">kumudhinisilks7686@gmail.com</a></p>
+                </div>
+                <div class="footer-section">
+                    <h4>🕐 Store Hours</h4>
+                    <p>10:00 AM - 8:00 PM</p>
+                    <div class="social-links">
+                        <p>📸 Instagram: @kumudhinisilks</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Kumudhini Silks. Draping Dreams Since 1989.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    {% block scripts %}{% endblock %}
+</body>
+</html>

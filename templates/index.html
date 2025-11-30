@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+
+{% block title %}Kumudhini Silks - Luxury Handwoven Sarees{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h2>✨ Where Heritage Drapes Itself in Luxury ✨</h2>
+            <p>For over three and a half decades, Kumudhini Silks has been a destination for women who seek beauty woven with meaning.</p>
+            <a href="{{ url_for('products') }}" class="btn">✨ Explore Our Collections</a>
+        </div>
+    </div>
+</section>
+
+<section class="highlights">
+    <div class="container">
+        <div class="highlight-grid">
+            <div class="highlight-item">
+                <h3>35+ Years</h3>
+                <p>of craftsmanship and trust</p>
+            </div>
+            <div class="highlight-item">
+                <h3>Curated Collections</h3>
+                <p>ethnic and bridal silk sarees</p>
+            </div>
+            <div class="highlight-item">
+                <h3>Pure Handwoven</h3>
+                <p>Kancheepuram and Banarasi silks</p>
+            </div>
+            <div class="highlight-item">
+                <h3>Personalized Styling</h3>
+                <p>assistance for every customer</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="featured">
+    <div class="container">
+        <h2 class="section-title">✨ Featured Collections ✨</h2>
+        <div class="collection-grid">
+            <div class="collection-item collection-item--kancheepuram">
+                <div class="collection-image kancheepuram">
+                    <span class="collection-tag">Heritage</span>
+                </div>
+                <h3>Kancheepuram Silks</h3>
+                <p>Pure, regal, and handwoven with rich zari borders</p>
+            </div>
+            <div class="collection-item collection-item--banarasi">
+                <div class="collection-image banarasi">
+                    <span class="collection-tag collection-tag--alt">Artisan</span>
+                </div>
+                <h3>Banarasi Silks</h3>
+                <p>Opulent, intricate, and woven with real zari threads</p>
+            </div>
+            <div class="collection-item collection-item--designer">
+                <div class="collection-image designer">
+                    <span class="collection-tag collection-tag--new">New</span>
+                </div>
+                <h3>Designer Silks</h3>
+                <p>Lightweight, luminous, and fashion-forward</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="testimonials">
+    <div class="container">
+        <h2 class="section-title">⭐ What Our Customers Say ⭐</h2>
+        <div class="testimonial-slider">
+            <div class="testimonial">
+                <p>"The craftsmanship and quality of Kumudhini Silks are unmatched. My wedding saree was absolutely stunning!"</p>
+                <p class="customer">- Priya R.</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
