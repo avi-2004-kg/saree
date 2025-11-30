@@ -40,22 +40,25 @@
     <div class="container">
         <h2 class="section-title">✨ Featured Collections ✨</h2>
         <div class="collection-grid">
-            <div class="collection-item collection-item--kancheepuram">
-                <img src="static/images/Kancheepuram Silk Sarees.jpg" alt="Kancheepuram Silk Sarees">
+             <div class="collection-item collection-item--kancheepuram">
+                <div class="collection-image">
+                    <img src="{{ url_for('static', filename='images/Kancheepuram Silk Sarees.jpg') }}" alt="Kancheepuram Silk Sarees">
                     <span class="collection-tag">Heritage</span>
                 </div>
                 <h3>Kancheepuram Silks</h3>
                 <p>Pure, regal, and handwoven with rich zari borders</p>
             </div>
             <div class="collection-item collection-item--banarasi">
-                <img src="static/images/Banarasi Silk Sarees.jpg" alt="Banarasi Silk Sarees">
+                <div class="collection-image">
+                    <img src="{{ url_for('static', filename='images/Banarasi Silk Sarees.jpg') }}" alt="Banarasi Silk Sarees">
                     <span class="collection-tag collection-tag--alt">Artisan</span>
                 </div>
                 <h3>Banarasi Silks</h3>
                 <p>Opulent, intricate, and woven with real zari threads</p>
             </div>
             <div class="collection-item collection-item--designer">
-                <img src="static/images/Tissue and Designer Silks.jpg" alt="Tissue and Designer Silks">
+                <div class="collection-image">
+                    <img src="{{ url_for('static', filename='images/Tissue and Designer Silks.jpg') }}" alt="Tissue and Designer Silks">
                     <span class="collection-tag collection-tag--new">New</span>
                 </div>
                 <h3>Designer Silks</h3>
